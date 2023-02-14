@@ -22,8 +22,8 @@ public class Guide {
      * the entire class). In Java, We always need to define the kind of data that a variable could be - this
      * variable's datatype is of type 'int', one of the primitive types, which are the most basic forms of
      * information stored in binary. Ints are whole numbers. We have named this variable id, since we could use
-     * this variable to tell different Guide objects apart.
-     */
+     
+     
     int id;
 
     /**
