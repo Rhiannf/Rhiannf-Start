@@ -41,7 +41,7 @@ public class Guide {
      *           to the constructor.
      */
     public Guide(int id){
-        this.id = id;
+       Guide guideObject1 = new Guide(1);
     }
     /**
      *  This is a METHOD. A method is a reusable block of code that belongs to a specific object.
