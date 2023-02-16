@@ -7,7 +7,7 @@
  * and concepts which you may be unfamiliar with. Don't worry about memorizing everything here - the concepts will
  * make sense in time. You can always refer back to this file as a general anatomy of the parts of Java.
  *
- * Let's begin. This file is a CLASS. A CLASS is a blueprint for generating something called an OBJECT. For now,
+ * et's begin. This file is a CLASS. A CLASS is a blueprint for generating something called an OBJECT. For now,
  * you can think of a Class as its own program, whose code is executed when one of its methods gets used once the
  * Class is in a state that is usable by Java as an Object. A method is something that an Object can 'do'. Objects
  * contain states (variables) and behavior (methods). More on methods below.
