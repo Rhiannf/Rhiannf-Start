@@ -17,6 +17,8 @@
  * accessible across the entire application.
  */
 public class Guide {
+    private final int G;
+    private int id;
     /**
      * This is a variable. It can be accessed by any of the class's methods (we refer to this as being scoped to
      * the entire class). In Java, We always need to define the kind of data that a variable could be - this
@@ -39,9 +41,10 @@ public class Guide {
      *
      * @param id We'll be setting the id of this object to whatever is passed in as a parameter
      *           to the constructor.
+     * @return 
      */
     public Guide(int id){
-        this.id = id;
+        this.id = id ;
         Guide guideObject1 = new Guide(1);
     }
     /**
@@ -67,7 +70,7 @@ public class Guide {
      */
     public String guideMethod(String message){
 //        notice how both id and message are used here to produce unique text depending on how the method was used
-        return "Success from guide object " + id + "! it says: " + message ;
+        return "Success from guide object " + guideMethod(message) + "! it says: " + message ;
     }
     /**
      *  Now, locate the test class and run its test. It should pass, and your IDE should inform you about the results
