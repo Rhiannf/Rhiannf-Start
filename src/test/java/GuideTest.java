@@ -50,7 +50,7 @@ public class GuideTest {
      *  guideMethod("hello").
      */
     @Test
-    public void basicsTest1(){
+    public void basicsTest1() {
 
         String inputMessage = "hello";
         String expected = "Success from guide object 1! it says: hello";
@@ -65,7 +65,7 @@ public class GuideTest {
      * expected when running guideMethod("test").
      */
     @Test
-    public void basicsTest2(){
+    public void basicsTest2() {
 
         String inputMessage = "test";
         String expected = "Success from guide object 1! it says: test";
