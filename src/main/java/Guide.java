@@ -17,8 +17,6 @@
  * accessible across the entire application.
  */
 public class Guide {
-    private final int G;
-    private int id;
     /**
      * This is a variable. It can be accessed by any of the class's methods (we refer to this as being scoped to
      * the entire class). In Java, We always need to define the kind of data that a variable could be - this
@@ -44,7 +42,6 @@ public class Guide {
      * @return 
      */
     public Guide(int id){
-        this.id = id ;
         Guide guideObject1 = new Guide(1);
     }
     /**
