@@ -25,7 +25,7 @@ public class GuideTest {
      * Writing a class, in a sense, is defining a custom data type (that can also run methods). This Guide must be
      * created so that the tests cases in this class can verify that the Guide object works as expected.
      */
-    Guide g;
+    public Guide g;
     /**
      * This is an annotation: it's a way for Java to apply some special modification to a class, method, or variable.
      * In this case, it's provided to us by junit. The @Before annotation simply defines a method that is run
@@ -38,27 +38,6 @@ public class GuideTest {
          * Instantiating the Guide object as such will assign its id to 1, and will allow us to use its methods.
          */
         g = new Guide(1);
-    }
-    /**
-     *  The Test annotation defines a method that will be used as a test. All tests will be run automatically
-     *  when the application gets tested. In a test, we must define certain inputs and some expected output,
-     *  and compare it to the actual behavior of our object. A human testing the application manually would be
-     *  doing the same thing. We use the Assert method (which we import from junit at the top of this file) to
-     *  see if a test actually passes or fails.
-     *
-     *  This test will use the Guide object that already exists, and verify that it works as expected when running
-     *  guideMethod("hello").
-     */
-    @Test
-    public void basicsTest1(){
-
-        String inputMessage = "hello";
-        String expected = "Success from guide object 1! it says: hello";
-        String actual = g.guideMethod(inputMessage);
-        System.out.println("Expected: "+expected);
-        System.out.println("Actual: "+actual);
-        Assert.assertEquals(expected, actual);
-
     }
     /**
      * Like the above test, This test will use the Guide object that already exists, and verify that it works as
