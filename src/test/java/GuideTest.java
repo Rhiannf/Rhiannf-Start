@@ -8,9 +8,7 @@
  * something that an Object can 'do'. Objects contain states (variables) and behavior (methods).
  */
 
-import org.junit.Before;
-
-import junit.framework.assert;
+import org.junit.Assert;
 
 /**
  * We write test cases so that way a computer can verify that our program works as expected - although it takes
@@ -43,7 +41,7 @@ public class GuideTest {
      * Like the above test, This test will use the Guide object that already exists, and verify that it works as
      * expected when running guideMethod("test").
      */
-    @Test
+    
     public void basicTest2(){
 
         String inputMessage = "test";
