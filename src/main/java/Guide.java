@@ -98,4 +98,19 @@ public class Guide {
         Assert.assertEquals(expected, actual);
     
     }
+    /**
+     * Like the above test, This test will use the Guide object that already exists, and verify that it works as
+     * expected when running guideMethod("test").
+     */
+    @Test
+    public void basicTest2(){
+    
+        String inputMessage = "test";
+        String expected = "Success from guide object 1! it says: test";
+        String actual = guideMethod(inputMessage);
+        System.out.println("Expected: "+expected);
+        System.out.println("Actual: "+actual);
+        Assert.assertEquals(expected, actual);
+    
+    }
 }

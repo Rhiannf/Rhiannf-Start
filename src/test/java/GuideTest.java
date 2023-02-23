@@ -8,9 +8,7 @@
  * something that an Object can 'do'. Objects contain states (variables) and behavior (methods).
  */
 
-import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Test;
 
 /**
  * We write test cases so that way a computer can verify that our program works as expected - although it takes
