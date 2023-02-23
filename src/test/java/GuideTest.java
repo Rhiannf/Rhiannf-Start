@@ -8,7 +8,6 @@
  * something that an Object can 'do'. Objects contain states (variables) and behavior (methods).
  */
 
-import org.junit.Assert;
 
 /**
  * We write test cases so that way a computer can verify that our program works as expected - although it takes
@@ -29,7 +28,7 @@ public class GuideTest {
      * In this case, it's provided to us by junit. The @Before annotation simply defines a method that is run
      * before each test.
      */
-    @Before
+    
     public void setUp(){
         /**
          * Here we are instantiating an object using the constructor that we've written in the Guide class.
