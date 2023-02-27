@@ -32,6 +32,6 @@ public class GuideMain {
 /**
  *  Now, locate the test class and run its test. It should pass, and your IDE should inform you about the results
  *  of the tests.
- *  Your task will be modifying the code in the remainder of the course repo so that their test cases pass rather
+ *  Your is will be modifying the code in the remainder of the course repo so that their test cases pass rather
  *  than fail.
  */
