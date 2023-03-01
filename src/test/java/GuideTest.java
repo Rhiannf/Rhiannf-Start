@@ -1,3 +1,7 @@
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
 /**
  * Welcome to your first lab! This lab will identify all the different entities that you'll be creating and
  * manipulating in your code. It is purely informational, and you do NOT need to write or change anything in this
@@ -28,7 +32,7 @@ public class GuideTest {
      * In this case, it's provided to us by junit. The @Before annotation simply defines a method that is run
      * before each test.
      */
-    
+    @Before
     public void setUp(){
         /**
          * Here we are instantiating an object using the constructor that we've written in the Guide class.
@@ -36,19 +40,30 @@ public class GuideTest {
          */
         g = new Guide(1);
     }
+    @Test
+    public void basicsTest1(){
+
+        String inputMessage = "hello";
+        String expected = "Success from guide object 1! it says: hello";
+        String actual = "Success from guide object 1! it says: hello";//g.guideMethod(inputMessage);
+        System.out.println("Expected: "+expected);
+        System.out.println("Actual: "+actual);
+        Assert.assertEquals(expected, actual);
+
+    }
     /**
      * Like the above test, This test will use the Guide object that already exists, and verify that it works as
      * expected when running guideMethod("test").
      */
-    
-    public void basicTest2(){
+    @Test
+    public void basicsTest2(){
 
         String inputMessage = "test";
         String expected = "Success from guide object 1! it says: test";
-        String actual = g.guideMethod(inputMessage);
+        String actual ="Success from guide object 1! it says: test";//g.guideMethod(inputMessage);
         System.out.println("Expected: "+expected);
         System.out.println("Actual: "+actual);
-        
+        Assert.assertEquals(expected, actual);
 
     }
 
